@@ -2,7 +2,6 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
     <title>Purplebricks</title>
 
@@ -17,10 +16,12 @@
     <div class="header">
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
-
+          <div class="col-xs-6">
+            <img src="assets/images/ezie.png" />
           </div>
-          <div class="col-md-6 ta-right">
+
+          <div class="col-xs-6 ta-right">
+            <br />
             <h1>Secure negotiation center</h1>
           </div>
         </div>
@@ -30,16 +31,30 @@
     <div class="body">
       <div class="container">
         <div class="col-md-12 box thin red filled">
-          <h2><b>Status:</b> Withdrawn</h2>
+          <h2>Status: <span class="fw-regular">Withdrawn</span></h2>
         </div>
 
         <div class="col-md-12 box purple">
           <div class="title">
             <h1>The property</h1>
           </div>
-          <h2>Eddington House, 16 Wigginton Road, Tamworth, B79 8PB</h2>
+          <div class="row">
+            <div class="col-xs-3 col-md-2">
+              <img src="assets/images/house.png" />
+            </div>
+            <div class="col-xs-5 col-md-6">
+              <h2>Eddington House, 16 Wigginton Road, Tamworth, B79 8PB</h2>
+            </div>
 
-          Asking price:
+            <div class="col-xs-4 ta-right">
+              Asking price:
+
+              <div class="">
+                <h1>£189,950</h1>
+              </div>
+              <input type="button" class="button" value="View extras included" />
+            </div>
+          </div>
         </div>
 
         <div class="col-md-12 box">
@@ -142,16 +157,21 @@
             </div>
           </div>
 
+          <div class="errors"></div>
+
           <div class="row">
             <h1 class="currency col-xs-1 mt-25">&#163;</h1>
-            <div class="col-xs-7 pl-0">
-              <h2>Enter an offer you would be willing to accept:</h2>
-              <input type="text" class="text" />
-              <p><input type="button" class="button purple" value="Add comments" /></p>
-            </div>
-            <div class="col-xs-4 ta-right">
-              <input type="button" class="button blue mt-40" value="Submit offer" />
-            </div>
+            <form>
+              <div class="col-xs-7 pl-0">
+                <h2>Enter an offer you would be willing to accept:</h2><br />
+                <input type="text" class="text" />
+                <p><input type="button" class="button purple" value="Add comments" /></p>
+              </div>
+              <div class="col-xs-4 ta-right">
+                <br/>
+                <input type="button" class="button blue submit fs-22" value="Submit offer" />
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -159,7 +179,7 @@
 
     <div class="footer">
       <div class="container">
-        <ul class="navigation col-md-8">
+        <ul class="navigation col-xs-8 pr-0">
           <li><a href="contact">Contact us</a></li>
           <li><a href="faq">FAQ</a></li>
           <li><a href="join">Join the team</a></li>
@@ -167,7 +187,7 @@
           <li><a href="help">Live help</a></li>
         </ul>
 
-        <div class="col-md-4 ta-right">
+        <div class="col-xs-4 pl-0 ta-right">
           <i class="fa fa-twitter" aria-hidden="true"></i>
           <i class="fa fa-facebook" aria-hidden="true"></i>
           <i class="fa fa-youtube" aria-hidden="true"></i>
