@@ -6,6 +6,7 @@
     <title>Purplebricks</title>
 
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/font-awesome.min.css" />
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900" rel="stylesheet">
   </head>
 
@@ -34,9 +35,39 @@
 
         <div class="box">
           <div class="title">
-            <h1>Buyer’​‌s details</h1>
+            <div class="flex-container">
+              <div class="flex1">
+                <h1>Buyer’​‌s details</h1>
+              </div>
+
+              <div class="flex-fixed-30"></div>
+
+              <div class="flex1 ta-right">
+                <button class="toggle">Hide <i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+              </div>
+            </div>
+
+            <br class="clear" />
           </div>
 
+          <div class="content">
+            <table>
+              <tr>
+                <td>Name:</td>
+                <td>Mr David Shepherd</td>
+              </tr>
+              <tr>
+                <td>Buying position:</td>
+                <td>Property to sell - 20 weeks on the market</td>
+              <tr>
+                <td>Financial position:</td>
+                <td>Mortgage required - approved</td>
+              <tr>
+                <td>Timescale:</td>
+                <td>Would like to move in 10 weeks - no chain</td>
+              </tr>
+            </table>
+          </div>
         </div>
 
 
@@ -46,7 +77,12 @@
               <h1>Buyer’s offer</h1>
             </div>
 
-            <input type="button" class="button" value="View comments" />
+            <div class="content">
+              £179,000
+              Subject to offer qualification by Purplebricks
+
+              <input type="button" class="button" value="View comments" />
+            </div>
           </div>
 
           <div class="flex-fixed-30"></div>
@@ -56,7 +92,10 @@
               <h1>Your response</h1>
             </div>
 
-            <input type="button" class="button" value="View comments" />
+            <div class="content">
+              You have withdrawn your acceptance of the offer
+              <input type="button" class="button" value="View comments" />
+            </div>
           </div>
         </div>
 
@@ -69,28 +108,43 @@
             Would you like your Expert, Robert White, to negotiate on your behalf? It’s completely free!
           </div>
 
-          <h2>Enter an offer you would be willing to accept:</h2>
-
-          <div>
-            <h1 class="currency">&#163;</h1>
-            <input type="text" class="text" />
-            <p>
-              <input type="button" class="button purple" value="Add comments" />
-            </p>
+          <div class="flex-container">
+            <h1 class="currency flex-fixed-30"><br />&#163;</h1>
+            <div class="flex2">
+              <h2>Enter an offer you would be willing to accept:</h2>
+              <p>
+                <input type="button" class="button blue right mt-40" value="Submit offer" />
+                <input type="text" class="text left" />
+                <br class="clear" />
+              </p>
+              <p>
+                <input type="button" class="button purple" value="Add comments" />
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="footer">
-      <div>
-        <ul class="navigation">
-          <li>Contact us</li>
+      <div class="flex-container">
+        <ul class="navigation flex2">
+          <li><a href="">Contact us</a></li>
           <li>FAQ</li>
           <li>Join the team</li>
           <li>About us</li>
           <li>Live help</li>
         </ul>
+
+        <div class="flex-fixed-30"></div>
+
+        <div class="flex1 ta-right">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+          <i class="fa fa-pinterest" aria-hidden="true"></i>
+          <i class="fa fa-google-plus" aria-hidden="true"></i>
+        </div>
       </div>
     </div>
 

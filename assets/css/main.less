@@ -10,6 +10,10 @@ html, body, input {
   -moz-osx-font-smoothing: grayscale;
   text-shadow: rgba(0,0,0,.01) 0 0 1px;
 }
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
 
 h1, h2, h3 {
   color: #550066;
@@ -49,6 +53,7 @@ input {
   }
 
   &.button {
+    cursor: pointer;
     border-radius: 5px;
     background-color: #aaaaaa;
     border: 0;
@@ -73,11 +78,27 @@ body > div > div {
   margin: auto;
 }
 
+table {
+  tr {
+    td {
+      &:first-child {
+        color: #550066;
+      }
+    }
+  }
+}
+
 .ta-center {
   text-align: center;
 }
+.ta-right {
+  text-align: right;
+}
 .m-auto {
   margin: auto;
+}
+.mt-40 {
+  margin-top: 40px;
 }
 .bold {
   font-weight: 900;
@@ -97,6 +118,27 @@ body > div > div {
 .font-source-sans {
   font-family: 'Source Sans Pro', sans-serif;
 }
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.clear {
+  clear: both;
+}
+
+.toggle {
+  background: none;
+  border: none;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 700;
+  color: #990099;
+  outline: 0;
+  display: inline;
+}
+
 
 .flexbox .flex-container {
   display: -webkit-flex;
@@ -147,7 +189,13 @@ body > div > div {
 
   .flex1 {
     display: table-cell;
+    min-width: 40%;
     width: 50%;
+  }
+  .flex2 {
+    display: table-cell;
+    min-width: 40%;
+    width: 60%;
   }
   .flex-fixed-30 {
     width: 30px;
@@ -226,6 +274,14 @@ body > div > div {
 
 .footer {
   background-color: #545353;
+  height: 40px;
+  line-height: 40px;
+  color: #bbbabb;
+
+  i {
+    cursor: pointer;
+    margin-left: 20px;
+  }
 
   ul.navigation {
     margin: 0;
@@ -251,6 +307,7 @@ body > div > div {
       a {
         text-decoration: none;
         color: #fff;
+        cursor: pointer;
       }
     }
   }
