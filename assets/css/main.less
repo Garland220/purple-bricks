@@ -49,7 +49,7 @@ input {
     font-weight: 700;
     border: 1px solid #bbbbbb;
     box-shadow: inset 0px 0px 2px rgba(0,0,0,0.3);
-    padding: 10px 12px;
+    // padding: 10px 12px;
   }
 
   &.button {
@@ -97,8 +97,17 @@ table {
 .m-auto {
   margin: auto;
 }
+.mt-25 {
+  margin-top: 25px;
+}
 .mt-40 {
   margin-top: 40px;
+}
+.pr-0 {
+  padding-right: 0;
+}
+.pl-0 {
+  padding-left: 0;
 }
 .bold {
   font-weight: 900;
@@ -118,14 +127,8 @@ table {
 .font-source-sans {
   font-family: 'Source Sans Pro', sans-serif;
 }
-.right {
-  float: right;
-}
-.left {
-  float: left;
-}
-.clear {
-  clear: both;
+.purple-text {
+  color: #550066;
 }
 
 .toggle {
@@ -250,6 +253,18 @@ table {
     margin-bottom: 10px;
   }
 
+  &.toggled {
+    .title {
+      border-bottom: none;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .content {
+      display: none;
+    }
+  }
+
   hr {
 
   }
@@ -274,7 +289,7 @@ table {
 
 .footer {
   background-color: #545353;
-  height: 40px;
+  min-height: 40px;
   line-height: 40px;
   color: #bbbabb;
 
@@ -302,6 +317,7 @@ table {
 
       &:first-child:before {
         content: '';
+        padding: 0;
       }
 
       a {

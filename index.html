@@ -2,12 +2,14 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
     <title>Purplebricks</title>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css" />
   </head>
 
   <body>
@@ -19,12 +21,12 @@
     </div>
 
     <div class="body">
-      <div>
-        <div class="box thin red filled">
+      <div class="container">
+        <div class="col-md-12 box thin red filled">
           <h2><b>Status:</b> Withdrawn</h2>
         </div>
 
-        <div class="box purple">
+        <div class="col-md-12 box purple">
           <div class="title">
             <h1>The property</h1>
           </div>
@@ -33,21 +35,15 @@
           Asking price:
         </div>
 
-        <div class="box">
-          <div class="title">
-            <div class="flex-container">
-              <div class="flex1">
-                <h1>Buyer’​‌s details</h1>
-              </div>
-
-              <div class="flex-fixed-30"></div>
-
-              <div class="flex1 ta-right">
-                <button class="toggle">Hide <i class="fa fa-chevron-up" aria-hidden="true"></i></button>
-              </div>
+        <div class="col-md-12 box">
+          <div class="title row">
+            <div class="col-md-6">
+              <h1>Buyer’​‌s details</h1>
             </div>
 
-            <br class="clear" />
+            <div class="col-md-6 ta-right">
+              <button class="toggle">Hide <i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+            </div>
           </div>
 
           <div class="content">
@@ -59,9 +55,11 @@
               <tr>
                 <td>Buying position:</td>
                 <td>Property to sell - 20 weeks on the market</td>
+              </tr>
               <tr>
                 <td>Financial position:</td>
                 <td>Mortgage required - approved</td>
+              </tr>
               <tr>
                 <td>Timescale:</td>
                 <td>Would like to move in 10 weeks - no chain</td>
@@ -71,55 +69,62 @@
         </div>
 
 
-        <div class="flex-container">
-          <div class="box half flex1">
-            <div class="title">
-              <h1>Buyer’s offer</h1>
-            </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <div class="box">
+              <div class="title">
+                <h1>Buyer’s offer</h1>
+              </div>
 
-            <div class="content">
-              £179,000
-              Subject to offer qualification by Purplebricks
+              <div class="content">
+                £179,000
+                Subject to offer qualification by Purplebricks
 
-              <input type="button" class="button" value="View comments" />
+                <input type="button" class="button" value="View comments" />
+              </div>
             </div>
           </div>
 
-          <div class="flex-fixed-30"></div>
+          <div class="col-xs-12 col-md-6">
+            <div class="box red disabled">
+              <div class="title">
+                <h1>Your response</h1>
+              </div>
 
-          <div class="box red half disabled flex1">
-            <div class="title">
-              <h1>Your response</h1>
-            </div>
-
-            <div class="content">
-              You have withdrawn your acceptance of the offer
-              <input type="button" class="button" value="View comments" />
+              <div class="content">
+                You have withdrawn your acceptance of the offer
+                <input type="button" class="button" value="View comments" />
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="box">
+
+        <div class="col-md-12 box">
           <div class="title">
             <h1>Re-open negotiations</h1>
           </div>
 
           <div class="box">
-            Would you like your Expert, Robert White, to negotiate on your behalf? It’s completely free!
+            <div class="row">
+              <div class="col-md-8 purple-text">
+                Would you like your Expert, Robert White, to negotiate on your behalf? It’s completely free!
+              </div>
+              <div class="col-md-4">
+                <input type="button" class="button purple" value="Negotiate for me" />
+              </div>
+            </div>
           </div>
 
-          <div class="flex-container">
-            <h1 class="currency flex-fixed-30"><br />&#163;</h1>
-            <div class="flex2">
+          <div class="row">
+            <h1 class="currency col-xs-1 mt-25">&#163;</h1>
+            <div class="col-xs-9 pl-0">
               <h2>Enter an offer you would be willing to accept:</h2>
-              <p>
-                <input type="button" class="button blue right mt-40" value="Submit offer" />
-                <input type="text" class="text left" />
-                <br class="clear" />
-              </p>
-              <p>
-                <input type="button" class="button purple" value="Add comments" />
-              </p>
+              <input type="text" class="text" />
+              <p><input type="button" class="button purple" value="Add comments" /></p>
+            </div>
+            <div class="col-xs-2">
+              <input type="button" class="button blue mt-40" value="Submit offer" />
             </div>
           </div>
         </div>
@@ -127,8 +132,8 @@
     </div>
 
     <div class="footer">
-      <div class="flex-container">
-        <ul class="navigation flex2">
+      <div class="container">
+        <ul class="navigation col-md-8">
           <li><a href="">Contact us</a></li>
           <li>FAQ</li>
           <li>Join the team</li>
@@ -136,9 +141,7 @@
           <li>Live help</li>
         </ul>
 
-        <div class="flex-fixed-30"></div>
-
-        <div class="flex1 ta-right">
+        <div class="col-md-4 ta-right">
           <i class="fa fa-twitter" aria-hidden="true"></i>
           <i class="fa fa-facebook" aria-hidden="true"></i>
           <i class="fa fa-youtube" aria-hidden="true"></i>
@@ -149,8 +152,6 @@
     </div>
 
     <script src="assets/js/ui.js"></script>
-    <script src="assets/js/modernizr-flexbox.js"></script>
-    <!-- <script src="assets/js/flexibility.js"></script> -->
 
   </body>
 </html>

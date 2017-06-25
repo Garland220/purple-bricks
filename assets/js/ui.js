@@ -32,28 +32,23 @@
 
   window.collapseSection = function(target) {
     var parent = target.parentElement.parentElement.parentElement;
-    var sibling = parent.nextElementSibling;
 
-    sibling.style.display = 'none';
-    target.className += ' hidden';
     target.innerHTML = 'show <i class="fa fa-chevron-down" aria-hidden="true"></i>';
-    parent.className = '';
+    parent.className += ' toggled';
   };
 
   window.showSection = function(target) {
     var parent = target.parentElement.parentElement.parentElement;
-    var sibling = parent.nextElementSibling;
 
-    sibling.style.display = 'block';
-    target.className = target.className.replace(' hidden', '');
     target.innerHTML = 'hide <i class="fa fa-chevron-up" aria-hidden="true"></i>';
-    parent.className = 'title';
+    parent.className = parent.className.replace(' toggled', '');
   };
 
   window.toggleSection = function(e) {
     var target = e.target;
+    var parent = target.parentElement.parentElement.parentElement;
 
-    if (target.className.indexOf('hidden') > -1) {
+    if (parent.className.indexOf('toggled') > -1) {
       window.showSection(target);
     }
     else {
