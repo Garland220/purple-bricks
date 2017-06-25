@@ -98,7 +98,7 @@ body > div > div {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-.flex-container {
+.flexbox .flex-container {
   display: -webkit-flex;
   display: flex;
 
@@ -135,22 +135,22 @@ body > div > div {
     -webkit-flex: 2;
     flex: 2;
   }
-  .flex3 {
-    -webkit-flex: 3;
-    flex: 3;
-  }
 
-  .flex-fixed-20 {
-    flex: 0 0 20px;
+  .flex-fixed-30 {
+    flex: 0 0 30px;
   }
-  .flex-fixed-40 {
-    flex: 0 0 40px;
+}
+
+.no-flexbox .flex-container {
+  display: table;
+  padding-bottom: 30px;
+
+  .flex1 {
+    display: table-cell;
+    width: 50%;
   }
-  .flex-fixed-60 {
-    flex: 0 0 60px;
-  }
-  .flex-fixed-80 {
-    flex: 0 0 80px;
+  .flex-fixed-30 {
+    width: 30px;
   }
 }
 

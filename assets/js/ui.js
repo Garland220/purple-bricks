@@ -7,6 +7,10 @@
     });
   };
 
+  window.toThousands = function(number) {
+    return String(number).replace(/(.)(?=(\d{3})+$)/g,'$1,');
+  };
+
   window.formatNumber = function(e) {
       var input = this.value;
 
@@ -23,7 +27,7 @@
       input = input.replace(/[\D\s]+/g, '');
       input = input ? parseInt(input, 10) : 0;
 
-      this.value = input.toLocaleString('en-US');
+      this.value = window.toThousands(input);
   };
 
   window.addEventListener('load', function() {
@@ -32,6 +36,8 @@
     for (var i=0; i<inputs.length; i+=1) {
       inputs[i].addEventListener('keyup', window.formatNumber);
     }
+
+    // flexibility(document.body);
   });
 
 })();
