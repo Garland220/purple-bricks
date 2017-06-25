@@ -72,6 +72,10 @@
 
       errors.innerHTML = '';
 
+      if (!!console) {
+        console.log({'offer': value});
+      }
+
       if (value === 0) {
         errors.innerHTML = '<div class="alert alert-danger fade in">Offer must be greater than zero</div>';
       }
