@@ -228,8 +228,30 @@ body > div > div {
   background-color: #545353;
 
   ul.navigation {
-    li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 
+    li {
+      display: inline;
+      text-transform: uppercase;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+
+      &:before {
+        content: '|';
+        padding: 10px;
+      }
+
+      &:first-child:before {
+        content: '';
+      }
+
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
     }
   }
 }
